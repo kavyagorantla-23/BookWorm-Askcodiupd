@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BookWorm</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f2f2f2;
+        }
+
+        header {
+            background-color: #333;
+            color: #fff;
+            text-align: center;
+            padding: 10px 0;
+        }
+
+        nav {
+            background-color: #444;
+            color: #fff;
+            text-align: center;
+            padding: 10px;
+        }
+
+        nav a {
+            color: #fff;
+            text-decoration: none;
+            margin: 0 10px;
+        }
+
+        main {
+            width: 90%;
+            margin: 20px auto;
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 20px;
+        }
+
+        .book {
+            background-color: #fff;
+            padding: 10px;
+            border-radius: 5px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        }
+
+        footer {
+            background-color: #333;
+            color: #fff;
+            text-align: center;
+            padding: 10px 0;
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+        }
+
+    </style>
+</head>
+
+<body>
+    <header>
+        <h1>BookWorm</h1>
+    </header>
+
+    <nav>
+        <a href="#">Home</a>
+        <a href="#">About</a>
+        <a href="#">Contact</a>
+        <a href="#">Sign Up</a>
+        <input type="search" placeholder="Search books">
+    </nav>
+
+    <main>
+        <div class="book">
+            <img src="https://via.placeholder.com/150" alt="Book Cover">
+            <h2>Title</h2>
+            <p>Author</p>
+            <p>Description</p>
+            <button>More Details</button>
+            <button>Add to Cart</button>
+            <button>Purchase</button>
+        </div>
+        <!-- Repeat this book section for additional books -->
+
+    </main>
+
+    <footer>
+        <p>&copy; 2021 BookWorm. All Rights Reserved.</p>
+        <a href="#" style="color: #bbb;">Terms of Service</a>
+        <a href="#" style="color: #bbb;">Privacy Policy</a>
+    </footer>
+</body>
+
+</html>
